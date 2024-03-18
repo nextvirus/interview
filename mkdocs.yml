@@ -1,5 +1,5 @@
 site_name: My Interview
-site_url: https://example.com/
+site_url: https://nextvirus.github.io/interview
 nav:
   - k8s:
     - 概述: k8s/base.md
