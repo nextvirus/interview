@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: My Interview
+site_url: https://example.com/
+nav:
+  - k8s:
+    - 概述: k8s/base.md
+    - 架构: k8s/arc.md
+
+
+theme: material
