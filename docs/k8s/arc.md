@@ -2,7 +2,7 @@
 
 ![](https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg)
 
-上图为 k8s 的架构图，是目前官方给出的最新架构图。主要工具为 Cloud-control-manage、etcd、kube-api-server、scheduler 、 Contriller Manager、kubelet 和 kube-proxy。
+上图为 k8s 的架构图，是目前官方给出的最新架构图。主要工具为 Cloud-control-manage、etcd、kube-api-server、scheduler 、 Controller Manager、kubelet 和 kube-proxy。
 
 在最新的架构图中，没有强调 master 和 worker 节点之间的区别，取而代之的就是引入了 Cloud-control-manager 这个组件。Cloud-contorl-manager 这个工具主要传播的理念为 Controller As Service，主要代表的开源项目是 Kamaji。它的主要理念是在搭建 Kubernetes 集群时，如何像公有云提供商那样快速生成一个 k8s 的控制平面，比如 AWS 的 EKS、阿里云的 ACK 和 谷歌的 GKE。
 
