@@ -5,6 +5,7 @@ nav:
   - k8s:
     - 概述: k8s/base.md
     - 架构: k8s/arc.md
+    - 平台: k8s/platform.md
 
 
 theme: material
