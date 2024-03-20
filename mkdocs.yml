@@ -6,6 +6,27 @@ nav:
     - 概述: k8s/base.md
     - 架构: k8s/arc.md
     - 平台: k8s/platform.md
+    - 原理:
+      - k8s-api-server: theory/apiserver.md
 
 
 theme: material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
