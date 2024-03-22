@@ -8,6 +8,7 @@ nav:
     - 平台: k8s/platform.md
     - 原理:
       - k8s-api-server: theory/apiserver.md
+      - k8s-scheduler: theory/scheduler.md
 
 
 theme: material

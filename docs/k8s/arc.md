@@ -10,10 +10,7 @@
 
 - k8s 的主要访问接口 kube-api-server，在通常情况下 kube-api-server 为了保证 k8s 的高可用，要保证其的高可用。
 - k8s 的持久化存储 etcd，在通常情况下为了数据的安全和持久化存储，etcd 也通常是需要高可用的，而 etcd 使用算法是 raft 的分布式算法，所以在扩展的时候需要进行单数扩展，比如：3、5、7、9 这样。
-- k8s 的调度组件 kube-schedular，主要负责整个集群的资源调度，指定 Pod 运行的节点。调度的方法是：
-    - 判断资源容量
-    - 判断优先级
-    - 判断容忍度、亲和度和污点
+- k8s 的调度组件 kube-scheduler，主要负责整个集群的资源调度，指定 Pod 运行的节点。
 - controller-manager: k8s 的管理层面，k8s 内置了多种 controller，比如 service-controller、replica-controller、endpoinrt-controller 和 deployment-controoler 等等。直接管理各个服务的增删改查。
 
 节点层包含的组件：
