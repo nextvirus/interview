@@ -9,6 +9,8 @@ nav:
     - 原理:
       - k8s-api-server: theory/apiserver.md
       - k8s-scheduler: theory/scheduler.md
+      - k8s-controller: theory/controller.md
+      - etcd: theory/etcd.md
 
 
 theme: material

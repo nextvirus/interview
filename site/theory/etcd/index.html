@@ -8,23 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://nextvirus.github.io/interview/">
+        <link rel="canonical" href="https://nextvirus.github.io/interview/theory/etcd/">
+      
+      
+        <link rel="prev" href="../controller/">
       
       
       
-        <link rel="next" href="k8s/base/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>My Interview</title>
+        <title>etcd - My Interview</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#raft" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="My Interview" class="md-header__button md-logo" aria-label="My Interview" data-md-component="logo">
+    <a href="../.." title="My Interview" class="md-header__button md-logo" aria-label="My Interview" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              介绍
+              etcd
             
           </span>
         </div>
@@ -168,7 +173,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My Interview" class="md-nav__button md-logo" aria-label="My Interview" data-md-component="logo">
+    <a href="../.." title="My Interview" class="md-nav__button md-logo" aria-label="My Interview" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -183,17 +188,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -202,7 +200,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -211,17 +208,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -235,7 +234,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             k8s
@@ -249,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="k8s/base/" class="md-nav__link">
+      <a href="../../k8s/base/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -270,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="k8s/arc/" class="md-nav__link">
+      <a href="../../k8s/arc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -291,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="k8s/platform/" class="md-nav__link">
+      <a href="../../k8s/platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -309,17 +308,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -333,7 +334,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             原理
@@ -347,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="theory/apiserver/" class="md-nav__link">
+      <a href="../apiserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -368,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="theory/scheduler/" class="md-nav__link">
+      <a href="../scheduler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="theory/controller/" class="md-nav__link">
+      <a href="../controller/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -407,10 +408,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="theory/etcd/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    etcd
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -419,6 +438,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是 raft 共识算法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -457,6 +503,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是 raft 共识算法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -470,10 +533,26 @@
                   
 
 
-  <h1>介绍</h1>
+  <h1>etcd</h1>
 
-<p>2024年3月份部门解散被裁，记录下自己准备面试的全部过程。</p>
-<p>Github 地址：<a href="https://github.com/nextvirus/interview">https://github.com/nextvirus/interview</a>，欢迎大家提问。</p>
+<p>etcd 是一个分布式的 key-value 存储数据库，是一个基于 raft 共识算法编写的数据库软件，k8s 以此作为持久化存储的方式。</p>
+<h2 id="raft">什么是 raft 共识算法</h2>
+<p>raft 共识算法是分布式协议实现的一种，区块链中的 Pow 和 Pos 也是共识算法的一种。</p>
+<p>要了解共识算法就要先了解分布式系统中的不可能三角 CAP ：</p>
+<ul>
+<li>Consistency：一致性，所有的副本在同一时间的数据一致</li>
+<li>Availability：可用性，系统中任何一个非故障节点接收到的每个请求都会得到响应，要么是请求的数据，要么是错误消息。换句话说，系统即使在节点故障的情况下也保持响应性。</li>
+<li>Partition tolerance：分区容错性，尽管可能发生节点之间的网络分区（通信故障），系统仍然可以继续运行。换句话说，系统能够处理某些节点之间无法通信的情况。</li>
+</ul>
+<p>一个分布式系统不可能同时满足这三个方面。raft 算法是一个 CP 算法，它的设计目标是可理解性、易于实现以及能够提供强一致性。</p>
+<p>Raft 算法通过引入领导者（leader）、跟随者（follower）和候选者（candidate）的角色来管理集群中的节点。在 Raft 中，所有节点通过选举产生一个领导者，领导者负责接收客户端的请求并将其复制到其他节点上。如果领导者失效，集群会重新选举一个新的领导者。</p>
+<p>Raft 算法的核心包括：</p>
+<ol>
+<li>Leader Election（领导者选举）：当没有领导者或者现有领导者失效时，集群中的节点会发起选举，通过投票选举出新的领导者。</li>
+<li>Log Replication（日志复制）：领导者负责接收客户端的请求，将其追加到自己的日志中，并将日志条目发送给其他节点，要求其也复制这些条目。一旦大多数节点都确认复制了这些条目，领导者就可以将这些条目提交到自己的状态机中，并向客户端发送响应。</li>
+<li>Safety Property（安全性）：Raft 算法确保了安全性，即任何已提交的日志条目都不会被覆盖或丢失，只要大多数节点是可达的，就不会出现分裂的情况。</li>
+</ol>
+<p>Raft 算法的设计简单且易于理解，因此被广泛应用于构建分布式系统中的一致性模块，例如分布式数据库、分布式锁服务等。具体的动态效果图，可以在这个<a href="https://raft.github.io/">链接</a>进行查看。</p>
 
 
 
@@ -520,10 +599,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>
