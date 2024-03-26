@@ -2,47 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nextvirus.github.io/interview/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/k8s/arc/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/k8s/base/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/k8s/platform/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/theory/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/theory/apiserver/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/theory/controller/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/theory/etcd/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nextvirus.github.io/interview/theory/kubelet/</loc>
+         <lastmod>2024-03-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nextvirus.github.io/interview/theory/kubeproxy/</loc>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nextvirus.github.io/interview/theory/scheduler/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-03-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -11,6 +11,8 @@ nav:
       - k8s-scheduler: theory/scheduler.md
       - k8s-controller: theory/controller.md
       - etcd: theory/etcd.md
+      - kubelet: theory/kubelet.md
+      - kubeproxy: theory/kubeproxy.md
 
 
 theme: material
